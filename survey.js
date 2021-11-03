@@ -40,7 +40,9 @@ rl.question(`What's your name? Nicknames are also acceptable:`, (answer1) => {
               console.log(`Thank you for your answers. Now generating profile blurb...`);
               spinner(); //puts a little spinner so it looks like it's really generating a profile blurb
               setTimeout(() => {
+
                 process.stderr.write('\x07'); //plays a little ding when profile is generated
+
                 console.log(`\n\n${answer1.trim()} loves listening to ${answer3.trim()} while doing ${answer2.trim()}. ${answer1.trim()} also thinks ${answer4.trim()} is the best meal of the day
 and there isn't anything else in the world better than eating ${answer5.trim()}. ${answer1.trim()}'s favourite sport is ${answer6.trim()}. 
 But most importantly ${answer1.trim()}'s superpower is...
